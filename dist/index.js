@@ -10,3 +10,11 @@ function addPerson(person) {
     console.log('Hello', person.name);
 }
 addPerson({ name: 'Anna', age: 25, gender: 'f' });
+var Funcionario = /** @class */ (function () {
+    function Funcionario(nome) {
+        this.name = nome;
+    }
+    return Funcionario;
+}());
+var func1;
+func1 = new Funcionario('bob');

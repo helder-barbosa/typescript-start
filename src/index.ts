@@ -32,3 +32,17 @@ function addPerson(person: Person) {
 }
 
 addPerson({ name: 'Anna', age: 25, gender: 'f' })
+
+class Funcionario implements Person {
+  constructor(nome: string) {
+    this.name = nome
+  }
+  name: string;
+  age: number;
+
+  [key: string]: string | number
+}
+
+
+let func1: Funcionario
+func1 = new Funcionario('bob')
