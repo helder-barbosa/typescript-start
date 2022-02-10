@@ -1,11 +1,11 @@
-import * as Express from 'express'
+import Express from 'express'
 
-const app: Express.Application = Express()
+const app = Express()
 
 app.get('/', (req: Express.Request, res: Express.Response) => {
   res.send('test')
 })
 
-app.listen(3000, err => {
-  console.log('Running...')
+app.listen(3000, () => {
+  console.log('Running New Version')
 })
